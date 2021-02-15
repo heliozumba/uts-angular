@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core'
 import { Routes, RouterModule } from '@angular/router'
 import { LoginComponent } from './login/login.component'
 import { RegisterComponent } from './register/register.component'
+import { DashboardComponent } from './views/dashboard/dashboard.component'
 
 const routes: Routes = [
   {
@@ -21,6 +22,13 @@ const routes: Routes = [
     component: RegisterComponent,
     data: {
       title: 'Registro'
+    }
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    data: {
+      title: 'Dashboard'
     }
   }
 ]
