@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { LoginComponent } from './login/login.component'
 import { RegisterComponent } from './register/register.component'
-import { DashboardComponent } from './views/dashboard/dashboard.component';
-import { SidebarComponent } from './shared/sidebar/sidebar.component';
-import { HeaderMobileComponent } from './shared/header-mobile/header-mobile.component';
-import { HeaderDesktopComponent } from './shared/header-desktop/header-desktop.component';
+import { DashboardComponent } from './views/dashboard/dashboard.component'
+import { SidebarComponent } from './shared/sidebar/sidebar.component'
+import { HeaderMobileComponent } from './shared/header-mobile/header-mobile.component'
+import { HeaderDesktopComponent } from './shared/header-desktop/header-desktop.component'
 import { PanelComponent } from './shared/panel/panel.component'
+import { StudentListComponent } from './views/dashboard/student-list/student-list.component'
+import { StatisticsComponent } from './views/dashboard/statistics/statistics.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PanelComponent } from './shared/panel/panel.component'
     SidebarComponent,
     HeaderMobileComponent,
     HeaderDesktopComponent,
-    PanelComponent
+    PanelComponent,
+    StudentListComponent,
+    StatisticsComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

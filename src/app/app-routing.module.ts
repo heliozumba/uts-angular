@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router'
 import { LoginComponent } from './login/login.component'
 import { RegisterComponent } from './register/register.component'
 import { DashboardComponent } from './views/dashboard/dashboard.component'
+import { StatisticsComponent } from './views/dashboard/statistics/statistics.component'
+import { StudentListComponent } from './views/dashboard/student-list/student-list.component'
 
 const routes: Routes = [
   {
@@ -30,7 +32,14 @@ const routes: Routes = [
     data: {
       title: 'Dashboard'
     }
-  }
+  } /* ,
+  {
+    /* path: 'estudantes',
+    component: StudentListComponent,
+    data: {
+      title: 'Lista de Estudantes'
+    } 
+  } */
 ]
 
 @NgModule({
