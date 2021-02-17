@@ -12,6 +12,8 @@ import { HeaderDesktopComponent } from './shared/header-desktop/header-desktop.c
 import { PanelComponent } from './shared/panel/panel.component'
 import { StudentListComponent } from './views/dashboard/student-list/student-list.component'
 import { StatisticsComponent } from './views/dashboard/statistics/statistics.component'
+import { StudentRegisterComponent } from './views/dashboard/student-register/student-register.component'
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -24,9 +26,10 @@ import { StatisticsComponent } from './views/dashboard/statistics/statistics.com
     HeaderDesktopComponent,
     PanelComponent,
     StudentListComponent,
-    StatisticsComponent
+    StatisticsComponent,
+    StudentRegisterComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

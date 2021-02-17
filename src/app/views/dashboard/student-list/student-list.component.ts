@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { RenderPanelService } from 'src/app/services/render-panel.service'
 
 @Component({
   selector: 'app-student-list',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./student-list.component.css']
 })
 export class StudentListComponent implements OnInit {
+  constructor (private panelRender: RenderPanelService) {}
 
-  constructor() { }
+  ngOnInit (): void {}
 
-  ngOnInit(): void {
+  changePanel (component: string) {
+    this.panelRender.setPanel(component)
   }
-
 }
