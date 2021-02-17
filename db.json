@@ -1,0 +1,43 @@
+{
+  "estudantes": [
+    {
+      "academicLevel": "2",
+      "address": "Rua 5 de Abril, Nº17 , Luanda",
+      "bi": "01000184210412",
+      "birthDate": "2021-02-17",
+      "email": "helio.zumba@gmail.com",
+      "formationArea": "Engenharia Informática",
+      "gender": "M",
+      "id": "1",
+      "institute": "ISPTEC",
+      "name": "Helio Zumba",
+      "phone": "923234543"
+    },
+    {
+      "academicLevel": "3",
+      "address": "Rua 9 de Abril, Nº17 , Luanda",
+      "bi": "01000184210413",
+      "birthDate": "2021-02-15",
+      "email": "antonio.silva@gmail.com",
+      "formationArea": "Engenharia Informática",
+      "gender": "M",
+      "id": "2",
+      "institute": "ISPTEC",
+      "name": "António Silva",
+      "phone": "923234545"
+    },
+    {
+      "name": "Helio Zumba",
+      "email": "helio.zumba@gmail.com",
+      "bi": "01000184210412",
+      "phone": "923234543",
+      "birthDate": "2021-02-19",
+      "id": "Zj96vuD",
+      "academicLevel": "2",
+      "institute": "ISPTEC",
+      "formationArea": "Engenharia Informática",
+      "address": "Rua 5 de Abril, Nº17 , Luanda",
+      "gender": ""
+    }
+  ]
+}

@@ -13,7 +13,8 @@ import { PanelComponent } from './shared/panel/panel.component'
 import { StudentListComponent } from './views/dashboard/student-list/student-list.component'
 import { StatisticsComponent } from './views/dashboard/statistics/statistics.component'
 import { StudentRegisterComponent } from './views/dashboard/student-register/student-register.component'
-import { FormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -29,7 +30,14 @@ import { FormsModule } from '@angular/forms'
     StatisticsComponent,
     StudentRegisterComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

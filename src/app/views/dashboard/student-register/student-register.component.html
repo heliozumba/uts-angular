@@ -1,20 +1,18 @@
 <div class="row">
   <div class="col-lg-8 offset-lg-2 main-form">
     <h3 class="my-4 text-center">Cadastro de Estudantes:</h3>
-    <h2>Nome: {{ student.name }}</h2>
-
-    <form (ngSubmit)="registerStudent()">
+    <form (ngSubmit)="registerStudent()" [formGroup]="studentForm">
       <h4 class="my-3">Dados Pessoais</h4>
       <div class="form-row">
         <div class="form-group col-9 mb-3">
           <label for="birth">Nome:</label>
           <input
             type="text"
-            [(ngModel)]="student.name"
             class="form-control"
             id="name"
             placeholder=""
             name="name"
+            formControlName="name"
           />
         </div>
         <div class="form-group col-3">
@@ -26,7 +24,7 @@
               name="gender"
               id="gender1"
               value="M"
-              [(ngModel)]="student.gender"
+              formControlName="gender"
             />
           </div>
           <div class="form-check form-check-inline">
@@ -37,7 +35,7 @@
               name="gender"
               id="gender2"
               value="F"
-              [(ngModel)]="student.gender"
+              formControlName="gender"
             />
           </div>
         </div>
@@ -47,11 +45,11 @@
           <label for="bi">Bilhete de Entidade:</label>
           <input
             type="text"
-            [(ngModel)]="student.bi"
             class="form-control"
             id="bi"
             placeholder=""
             name="bi"
+            formControlName="bi"
           />
         </div>
         <div class="form-group col-4 mb-3">
@@ -62,7 +60,7 @@
             id="birth"
             name="birth"
             placeholder=""
-            [(ngModel)]="student.birthDate"
+            formControlName="birthDate"
           />
         </div>
       </div>
@@ -70,34 +68,34 @@
         <div class="form-group col-6 mb-3">
           <label for="email">Email:</label>
           <input
-            [(ngModel)]="student.email"
             type="email"
             class="form-control"
             id="email"
             placeholder=""
             name="email"
+            formControlName="email"
           />
         </div>
         <div class="form-group col-6 mb-3">
           <label for="phone">Telefone:</label>
           <input
-            [(ngModel)]="student.phone"
             type="text"
             class="form-control"
             id="phone"
             placeholder=""
             name="phone"
+            formControlName="phone"
           />
         </div>
       </div>
       <div class="form-group mb-3">
         <label for="address">Endereço:</label>
         <input
-          [(ngModel)]="student.address"
           type="text"
           class="form-control"
           id="address"
           name="address"
+          formControlName="address"
         />
       </div>
       <h4 class="my-3">Formação Académica</h4>
@@ -108,7 +106,7 @@
           class="form-control"
           id="institute"
           name="institute"
-          [(ngModel)]="student.institute"
+          formControlName="institute"
         />
       </div>
       <div class="form-row">
@@ -118,7 +116,7 @@
             name="level"
             id="level"
             class="form-select mb-3 col-12"
-            [(ngModel)]="student.academicLevel"
+            formControlName="academicLevel"
           >
             <option value="0">Freq. Univesitária</option>
             <option value="1">Lienciatura</option>
@@ -132,7 +130,7 @@
             class="form-control"
             id="aria"
             name="aria"
-            [(ngModel)]="student.formationArea"
+            formControlName="formationArea"
           />
         </div>
       </div>
