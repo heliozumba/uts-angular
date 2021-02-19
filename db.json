@@ -1,43 +1,30 @@
 {
   "estudantes": [
     {
-      "academicLevel": "2",
-      "address": "Rua 5 de Abril, Nº17 , Luanda",
-      "bi": "01000184210412",
-      "birthDate": "2021-02-17",
-      "email": "helio.zumba@gmail.com",
-      "formationArea": "Engenharia Informática",
-      "gender": "M",
-      "id": "1",
-      "institute": "ISPTEC",
-      "name": "Helio Zumba",
-      "phone": "923234543"
-    },
-    {
-      "academicLevel": "3",
-      "address": "Rua 9 de Abril, Nº17 , Luanda",
-      "bi": "01000184210413",
+      "name": "Adilson Teste 222",
+      "email": "adilson.teste@outlook.com",
+      "bi": "0101001000420014",
+      "phone": "9210000000",
       "birthDate": "2021-02-15",
-      "email": "antonio.silva@gmail.com",
+      "id": 626092,
+      "academicLevel": "Licenciado",
+      "institute": "Instituto Ali Mesmo Yh",
       "formationArea": "Engenharia Informática",
-      "gender": "M",
-      "id": "2",
-      "institute": "ISPTEC",
-      "name": "António Silva",
-      "phone": "923234545"
+      "address": "Rua Aquela Ali Nº17, 18, 19",
+      "gender": ""
     },
     {
-      "name": "Helio Zumba",
-      "email": "helio.zumba@gmail.com",
+      "name": "Ultimo Teste",
+      "email": "ultimo.teste@gmail.com",
       "bi": "01000184210412",
-      "phone": "923234543",
-      "birthDate": "2021-02-19",
-      "id": "Zj96vuD",
-      "academicLevel": "2",
-      "institute": "ISPTEC",
+      "phone": "923933434",
+      "birthDate": "2021-02-23",
+      "id": 2000,
+      "academicLevel": "Mestre",
+      "institute": "Instituto Ali Mesmo Yh",
       "formationArea": "Engenharia Informática",
       "address": "Rua 5 de Abril, Nº17 , Luanda",
-      "gender": ""
+      "gender": "M"
     }
   ]
 }

@@ -5,11 +5,12 @@ import { RegisterComponent } from './register/register.component'
 import { DashboardComponent } from './views/dashboard/dashboard.component'
 import { StatisticsComponent } from './views/dashboard/statistics/statistics.component'
 import { StudentListComponent } from './views/dashboard/student-list/student-list.component'
+import { StudentRegisterComponent } from './views/dashboard/student-register/student-register.component'
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/login',
+    redirectTo: '/dashboard',
     pathMatch: 'full'
   },
   {
@@ -32,7 +33,32 @@ const routes: Routes = [
     data: {
       title: 'Dashboard'
     }
-  } /* ,
+  },
+  {
+    path: 'estudantes',
+    component: StudentListComponent,
+    data: {
+      title: 'Lista de Estudantes'
+    },
+    children: []
+  },
+
+  {
+    path: 'estudantes/alterar',
+    component: StudentRegisterComponent,
+    data: {
+      title: 'Alteração de Estudante'
+    }
+  },
+  {
+    path: 'estudantes/registrar',
+    component: StudentRegisterComponent,
+    data: {
+      title: 'Registro de Estudante'
+    }
+  }
+
+  /* ,
   {
     /* path: 'estudantes',
     component: StudentListComponent,

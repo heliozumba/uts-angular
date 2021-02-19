@@ -18,7 +18,10 @@
           >
         </li>
         <li>
-          <a href="javascript:void(0)" (click)="changePanel('students')">
+          <a
+            [routerLink]="['/estudantes']"
+            routerLinkActive="router-link-active"
+          >
             <i class="fas fa-user"></i>Estudantes
           </a>
         </li>

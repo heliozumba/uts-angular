@@ -18,4 +18,16 @@ export class StudentService {
   getAllStudents (): Observable<any> {
     return this.http.get(this.endpoint)
   }
+
+  getStudentById (id: any): Observable<any> {
+    return this.http.get(`${this.endpoint}/${id}`)
+  }
+
+  editStudent (student: Student) {
+    return this.http.put(`${this.endpoint}/${student.id}`, student)
+  }
+
+  deleteStudent (id: any) {
+    return this.http.delete(`${this.endpoint}/${id}`)
+  }
 }

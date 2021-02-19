@@ -1,52 +1,29 @@
 <div class="row">
   <div class="col-md-12">
     <!-- DATA TABLE -->
-    <h3 class="title-5 m-b-35">data table</h3>
+    <h3 class="title-5 m-b-35">Lista de Estudantes</h3>
     <div class="table-data__tool">
       <div class="table-data__tool-left">
-        <div class="rs-select2--light rs-select2--md">
-          <select class="js-select2" name="property">
-            <option selected="selected">All Properties</option>
-            <option value="">Option 1</option>
-            <option value="">Option 2</option>
-          </select>
-          <div class="dropDownSelect2"></div>
-        </div>
-        <div class="rs-select2--light rs-select2--sm">
-          <select class="js-select2" name="time">
-            <option selected="selected">Today</option>
-            <option value="">3 Days</option>
-            <option value="">1 Week</option>
-          </select>
-          <div class="dropDownSelect2"></div>
-        </div>
         <button class="au-btn-filter">
-          <i class="zmdi zmdi-filter-list"></i>filters
+          <i class="zmdi zmdi-filter-list"></i>Filtros
         </button>
       </div>
       <div class="table-data__tool-right">
         <button
           class="au-btn au-btn-icon au-btn--green au-btn--small"
-          (click)="changePanel('student-register')"
+          [routerLink]="['/estudantes/registrar']"
+          routerLinkActive="router-link-active"
         >
           <!--  -->
-          <i class="zmdi zmdi-plus"></i>add item
+          <i class="zmdi zmdi-plus"></i>Formando
         </button>
-        <div class="rs-select2--dark rs-select2--sm rs-select2--dark2">
-          <select class="js-select2" name="type">
-            <option selected="selected">Export</option>
-            <option value="">Option 1</option>
-            <option value="">Option 2</option>
-          </select>
-          <div class="dropDownSelect2"></div>
-        </div>
       </div>
     </div>
     <div class="table-responsive table-responsive-data2">
       <table class="table table-data2">
-        <thead class="thead-dark text-white">
+        <thead class="bg-info">
           <tr>
-            <th>Nº de Colaborador</th>
+            <th>Nº</th>
             <th>Nome</th>
             <th>Área de Formação</th>
             <th>Grau Académico</th>
@@ -59,7 +36,7 @@
             class="tr-shadow mb-2"
             *ngFor="let student of listStudents; index as i"
           >
-            <td>{{ i }}</td>
+            <td>{{ student.id }}</td>
             <td>
               <span class="">{{ student.name }}</span>
             </td>
@@ -85,19 +62,26 @@
                 >
                   <i class="zmdi zmdi-mail-send"></i>
                 </button>
-                <button
+                <a
                   class="item"
                   data-toggle="tooltip"
                   data-placement="top"
                   title="Editar"
+                  (click)="studentToEdit(student)"
+                  [routerLink]="['/estudantes/alterar']"
+                  routerLinkActive="router-link-active"
                 >
+                  <!--  -->
                   <i class="zmdi zmdi-edit"></i>
-                </button>
+                </a>
                 <button
                   class="item"
                   data-toggle="tooltip"
                   data-placement="top"
                   title="Eliminar"
+                  data-toggle="modal"
+                  data-target="#deleteModal"
+                  (click)="deleteStudent(student.id)"
                 >
                   <i class="zmdi zmdi-delete"></i>
                 </button>
